@@ -1,0 +1,6 @@
+[package]
+name = "magipop_vote"
+version = "0.1.0"
+
+[dependencies]
+starknet = ">=2.2.0"

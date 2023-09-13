@@ -1,0 +1,157 @@
+{
+    "hash": "0x8a68d1b64b286cada3185d4e87500207fe04d0ae",
+    "documents": [
+        "Users/sloan_gw/Library/CloudStorage/OneDrive-Personal/magipop/magipop_map/magipop-map-contract/samples/magipopmap/magipopmap.ts"
+    ],
+    "methods": [
+        {
+            "id": "ownerOf",
+            "name": ",ownerOf",
+            "range": "0-77",
+            "params": [
+                "locationId,String,0"
+            ],
+            "variables": [
+                "key,ByteArray,0",
+                "serialzied,ByteArray,1",
+                "owner,Hash160,2"
+            ],
+            "return": "Hash160",
+            "sequence-points": [
+                "3[0]29:45-29:46",
+                "9[0]30:11-30:14",
+                "21[0]31:11-31:21",
+                "22[0]32:5-32:20",
+                "46[0]32:21-32:22",
+                "51[0]33:16-33:21",
+                "54[0]34:9-34:22",
+                "60[0]35:5-35:6",
+                "67[0]35:12-35:13",
+                "68[0]36:9-36:21",
+                "74[0]37:5-37:6",
+                "76[0]38:1-38:2"
+            ]
+        },
+        {
+            "id": "post",
+            "name": ",post",
+            "range": "78-163",
+            "params": [
+                "locationId,String,0",
+                "message,String,1"
+            ],
+            "variables": [
+                "key,ByteArray,0"
+            ],
+            "return": "String",
+            "sequence-points": [
+                "81[0]41:59-41:60",
+                "82[0]42:5-42:23",
+                "93[0]42:24-42:81",
+                "143[0]43:11-43:14",
+                "144[0]44:5-44:39",
+                "156[0]45:5-45:23",
+                "162[0]46:1-46:2"
+            ]
+        },
+        {
+            "id": "detailOf",
+            "name": ",detailOf",
+            "range": "164-371",
+            "params": [
+                "locationId,String,0"
+            ],
+            "variables": [
+                "key,ByteArray,0",
+                "serialzied,ByteArray,1",
+                "owner,Hash160,2",
+                "mapId,String,3",
+                "name,String,4",
+                "description,String,5",
+                "x,String,6",
+                "y,String,7",
+                "tags,String,8",
+                "image,String,9",
+                "map,Map,10"
+            ],
+            "return": "Map",
+            "sequence-points": [
+                "167[0]49:46-49:47",
+                "173[0]50:11-50:14",
+                "185[0]51:11-51:21",
+                "186[0]52:5-52:20",
+                "210[0]52:21-52:22",
+                "215[0]53:16-53:21",
+                "219[0]53:23-53:28",
+                "223[0]53:30-53:34",
+                "227[0]53:36-53:47",
+                "231[0]53:49-53:50",
+                "235[0]53:52-53:53",
+                "240[0]53:55-53:59",
+                "245[0]53:61-53:66",
+                "250[0]54:15-54:18",
+                "252[0]55:9-55:33",
+                "264[0]56:9-56:33",
+                "276[0]57:9-57:31",
+                "287[0]58:9-58:45",
+                "305[0]59:9-59:25",
+                "313[0]60:9-60:25",
+                "322[0]61:9-61:31",
+                "334[0]62:9-62:33",
+                "347[0]63:9-63:20",
+                "354[0]64:5-64:6",
+                "361[0]64:12-64:13",
+                "362[0]65:9-65:26",
+                "368[0]66:5-66:6",
+                "370[0]67:1-67:2"
+            ]
+        },
+        {
+            "id": "_deploy",
+            "name": ",_deploy",
+            "range": "372-411",
+            "params": [
+                "_data,Any,0",
+                "update,Boolean,1"
+            ],
+            "variables": [
+                "tx,Any,0"
+            ],
+            "return": "Void",
+            "sequence-points": [
+                "375[0]69:60-69:61",
+                "376[0]70:5-70:16",
+                "382[0]70:17-70:24",
+                "393[0]71:11-71:13",
+                "394[0]72:5-72:47",
+                "410[0]73:1-73:2"
+            ]
+        },
+        {
+            "id": "checkOwner",
+            "name": ",checkOwner",
+            "range": "412-454",
+            "params": [],
+            "variables": [],
+            "return": "Boolean",
+            "sequence-points": [
+                "412[0]75:23-75:24",
+                "413[0]76:5-76:70",
+                "453[0]77:1-77:2"
+            ]
+        }
+    ],
+    "events": [
+        {
+            "id": "Transfer",
+            "name": ",Transfer",
+            "params": [
+                "from,Hash160,0",
+                "to,Hash160,1",
+                "amount,Integer,2",
+                "tokenId,Hash256,3"
+            ]
+        }
+    ],
+    "static-variables": []
+}
